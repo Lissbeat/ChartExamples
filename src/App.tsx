@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Chart1  from './components/Chart1';
+import Chart2  from './components/Chart2';
+import Chart3  from './components/Chart3';
+import {Header} from "./style-components/Header";
+import {PageContainer, PageDiv, Card} from "./style-components/PageContainer";
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageDiv>
+      {/* header component */}
+      <Header></Header>
+      {/* wrap components inside a page container  */}
+      <PageContainer>
+          {/* three different chart examples*/}
+        <Card><Chart1></Chart1>  </Card>
+        <Card style= {{backgroundColor: "lightblue"}}><Chart2></Chart2>  </Card>
+        <Card style= {{backgroundColor: "lightpink"}}><Chart3></Chart3>  </Card>
+      </PageContainer>
+    </PageDiv>
   );
 }
 

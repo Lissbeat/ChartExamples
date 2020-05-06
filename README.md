@@ -1,3 +1,5 @@
+View screen record of this app by downloading the file named: React App - Google Chrome 2020-05-06 00-32-19.mp4	
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
